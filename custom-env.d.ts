@@ -6,4 +6,8 @@ interface CloudflareEnv {
   BREVO_API_KEY?: string;
   GOOGLE_CLIENT_ID?: string;
   GOOGLE_CLIENT_SECRET?: string;
+  
+  // Migration and webhook-related bindings
+  MIGRATION_SECRET?: string;
+  DB?: D1Database;
 }
