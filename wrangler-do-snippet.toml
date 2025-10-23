@@ -1,0 +1,8 @@
+# Add this snippet into your wrangler.toml (under the appropriate env, e.g., [env.production])
+[durable_objects]
+bindings = [
+  { name = "CODEGEN_DO", class_name = "CodeGenDO" }
+]
+
+# Example of adding to the top-level bindings (if your existing wrangler.toml uses [env.production], add there)
+# Also ensure your build step includes the compiled Durable Object (CodeGenDO) in the worker bundle.
